@@ -1,0 +1,1929 @@
+2023-10-16 15:08:01,328 WARN  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel] [5.1] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2023-10-16 15:08:01,328 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel] [5.1] Resolving domain name 'localhost' to address(es): [127.0.0.1, 0:0:0:0:0:0:0:1]
+2023-10-16 15:08:01,328 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel] [5.1] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1]
+2023-10-16 15:08:01,349 INFO  org.apache.seatunnel.engine.server.SeaTunnelServer - SeaTunnel server start...
+2023-10-16 15:08:01,350 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] Based on Hazelcast IMDG version: 5.1.0 (20220228 - 21f20e7)
+2023-10-16 15:08:01,350 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] Cluster name: seatunnel
+2023-10-16 15:08:01,350 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] 
+                                                         
+ _____               _____                             _ 
+/  ___|             |_   _|                           | |
+\ `--.   ___   __ _   | |   _   _  _ __   _ __    ___ | |
+ `--. \ / _ \ / _` |  | |  | | | || '_ \ | '_ \  / _ \| |
+/\__/ /|  __/| (_| |  | |  | |_| || | | || | | ||  __/| |
+\____/  \___| \__,_|  \_/   \__,_||_| |_||_| |_| \___||_|
+                                                         
+
+2023-10-16 15:08:01,350 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] Copyright ? 2021-2022 The Apache Software Foundation. Apache SeaTunnel, SeaTunnel, and its feather logo are trademarks of The Apache Software Foundation.
+2023-10-16 15:08:01,350 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-10-16 15:08:01,352 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel] [5.1] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-10-16 15:08:01,889 INFO  com.hazelcast.system.security - [localhost]:5801 [seatunnel] [5.1] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see ? security recommendations and the status of current config.
+2023-10-16 15:08:01,940 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel] [5.1] Using TCP/IP discovery
+2023-10-16 15:08:01,940 WARN  com.hazelcast.cp.CPSubsystem - [localhost]:5801 [seatunnel] [5.1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2023-10-16 15:08:02,101 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] Created new BusWork : 2098830440
+2023-10-16 15:08:02,102 WARN  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] The Node is not ready yet, Node state STARTING,looking forward to the next scheduling
+2023-10-16 15:08:02,112 WARN  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - failed send heartbeat to resource manager, will retry later. this address: [localhost]:5801
+2023-10-16 15:08:02,122 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:02,155 INFO  com.hazelcast.internal.diagnostics.Diagnostics - [localhost]:5801 [seatunnel] [5.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2023-10-16 15:08:02,160 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel] [5.1] [localhost]:5801 is STARTING
+2023-10-16 15:08:02,182 INFO  com.hazelcast.internal.cluster.ClusterService - [localhost]:5801 [seatunnel] [5.1] 
+
+Members {size:1, ver:1} [
+	Member [localhost]:5801 - eb9c248f-e40f-44b3-935f-dbcbc677785b this
+]
+
+2023-10-16 15:08:02,195 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel] [5.1] [localhost]:5801 is STARTED
+2023-10-16 15:08:02,234 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel] [5.1] Received auth from Connection[id=1, /127.0.0.1:5801->/127.0.0.1:53095, qualifier=null, endpoint=[127.0.0.1]:53095, remoteUuid=2840097e-c90a-4a24-9eda-c455e05f52f6, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: 2840097e-c90a-4a24-9eda-c455e05f52f6, client name: hz.client_1, client version: 5.1
+2023-10-16 15:08:04,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] This node become a new active master node, begin init coordinator service
+2023-10-16 15:08:04,327 INFO  com.hazelcast.internal.partition.impl.PartitionStateManager - [localhost]:5801 [seatunnel] [5.1] Initializing cluster partition table arrangement...
+2023-10-16 15:08:07,114 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - Init ResourceManager
+2023-10-16 15:08:07,114 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker... 
+2023-10-16 15:08:07,115 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker live nodes: [[localhost]:5801]
+2023-10-16 15:08:07,118 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - registerWorker: {[localhost]:5801=WorkerProfile(address=[localhost]:5801, profile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=2058354688}}, unassignedResource=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=2058354688}}, assignedSlots=[], unassignedSlots=[])}
+2023-10-16 15:08:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:12,122 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:08:22,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:22,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:08:32,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:32,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:08:42,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:42,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:08:48,738 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel] [5.1] Received auth from Connection[id=2, /127.0.0.1:5801->/127.0.0.1:49477, qualifier=null, endpoint=[127.0.0.1]:49477, remoteUuid=b92714e1-841c-4faf-97da-c218592106d2, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: b92714e1-841c-4faf-97da-c218592106d2, client name: hz.client_1, client version: 5.1.1
+2023-10-16 15:08:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:08:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:01,337 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel] [5.1] Received auth from Connection[id=3, /127.0.0.1:5801->/127.0.0.1:35527, qualifier=null, endpoint=[127.0.0.1]:35527, remoteUuid=7a43759a-b45b-47f4-83e9-ab8c014b862c, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: 7a43759a-b45b-47f4-83e9-ab8c014b862c, client name: hz.client_1, client version: 5.1
+2023-10-16 15:09:02,122 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2023-10-16 15:09:02,122 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:02,182 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Init JobMaster for Job 10 (766195915831640065) 
+2023-10-16 15:09:02,182 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job 10 (766195915831640065) needed jar urls [file:/usr/local/soft/apache-seatunnel-2.3.3/lib/connector-jdbc-2.3.3.jar, file:/usr/local/soft/apache-seatunnel-2.3.3/connectors/seatunnel/connector-jdbc-2.3.3.jar]
+2023-10-16 15:09:02,454 WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-10-16 15:09:02,827 INFO  org.apache.seatunnel.engine.checkpoint.storage.hdfs.HdfsStorage - Path /tmp/seatunnel/checkpoint_snapshot/766195915831640065 is not a directory
+2023-10-16 15:09:02,827 INFO  org.apache.seatunnel.engine.checkpoint.storage.hdfs.HdfsStorage - No checkpoint found for job, job id is: 766195915831640065
+2023-10-16 15:09:02,831 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] is in state CREATED when init state future
+2023-10-16 15:09:02,831 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] is in state CREATED when init state future
+2023-10-16 15:09:02,832 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] is in state CREATED when init state future
+2023-10-16 15:09:02,835 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job Job 10 (766195915831640065) waiting for scheduler finished
+2023-10-16 15:09:02,849 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job 10 (766195915831640065) turn from state CREATED to SCHEDULED.
+2023-10-16 15:09:02,855 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job 10 (766195915831640065), Pipeline: [(1/1)] turn from state CREATED to SCHEDULED.
+2023-10-16 15:09:02,862 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] state from CREATED to SCHEDULED
+2023-10-16 15:09:02,901 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] turn from state CREATED to SCHEDULED.
+2023-10-16 15:09:02,908 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] state from CREATED to SCHEDULED
+2023-10-16 15:09:02,913 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] turn from state CREATED to SCHEDULED.
+2023-10-16 15:09:02,923 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] state from CREATED to SCHEDULED
+2023-10-16 15:09:02,924 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] turn from state CREATED to SCHEDULED.
+2023-10-16 15:09:02,930 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job 10 (766195915831640065), Pipeline: [(1/1)] turn from state SCHEDULED to DEPLOYING.
+2023-10-16 15:09:02,931 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] state from SCHEDULED to DEPLOYING
+2023-10-16 15:09:02,933 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] turn from state SCHEDULED to DEPLOYING.
+2023-10-16 15:09:02,935 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] state from SCHEDULED to DEPLOYING
+2023-10-16 15:09:02,937 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] turn from state SCHEDULED to DEPLOYING.
+2023-10-16 15:09:02,939 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] state from SCHEDULED to DEPLOYING
+2023-10-16 15:09:02,941 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] turn from state SCHEDULED to DEPLOYING.
+2023-10-16 15:09:02,954 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] received deploying task executionId [766195921573642241]
+2023-10-16 15:09:02,962 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1}, executionId [766195921573642241]
+2023-10-16 15:09:02,962 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1} init success
+2023-10-16 15:09:02,966 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] received deploying task executionId [766195921573707777]
+2023-10-16 15:09:02,967 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] received deploying task executionId [766195921573773313]
+2023-10-16 15:09:02,971 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1} success
+2023-10-16 15:09:02,972 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] state from DEPLOYING to RUNNING
+2023-10-16 15:09:02,973 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] turn from state DEPLOYING to RUNNING.
+2023-10-16 15:09:02,977 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - starting seatunnel source split enumerator task, source name: pipeline-1 [Source[0]-Jdbc-default-identifier]
+2023-10-16 15:09:02,998 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000}, executionId [766195921573707777]
+2023-10-16 15:09:02,999 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000} init success
+2023-10-16 15:09:02,999 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001}, executionId [766195921573773313]
+2023-10-16 15:09:03,002 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000} success
+2023-10-16 15:09:03,002 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] state from DEPLOYING to RUNNING
+2023-10-16 15:09:03,005 INFO  org.apache.seatunnel.engine.server.task.TransformSeaTunnelTask - starting seatunnel transform task, index 0
+2023-10-16 15:09:03,008 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] turn from state DEPLOYING to RUNNING.
+2023-10-16 15:09:03,012 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001} init success
+2023-10-16 15:09:03,019 INFO  org.apache.seatunnel.engine.server.task.TransformSeaTunnelTask - starting seatunnel transform task, index 1
+2023-10-16 15:09:03,019 INFO  org.apache.seatunnel.engine.server.task.SourceSeaTunnelTask - starting seatunnel source task, index 0
+2023-10-16 15:09:03,022 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] deploying TaskGroup TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001} success
+2023-10-16 15:09:03,022 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] state from DEPLOYING to RUNNING
+2023-10-16 15:09:03,026 INFO  org.apache.seatunnel.engine.server.task.SourceSeaTunnelTask - starting seatunnel source task, index 1
+2023-10-16 15:09:03,027 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] turn from state DEPLOYING to RUNNING.
+2023-10-16 15:09:03,272 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job 10 (766195915831640065), Pipeline: [(1/1)] turn from state DEPLOYING to RUNNING.
+2023-10-16 15:09:03,274 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job 10 (766195915831640065) turn from state SCHEDULED to RUNNING.
+2023-10-16 15:09:03,274 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job 10 (766195915831640065) scheduler finished
+2023-10-16 15:09:03,552 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received reader register, readerID: TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001}, taskID=40001, index=1}
+2023-10-16 15:09:03,552 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received reader register, readerID: TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000}, taskID=40000, index=0}
+2023-10-16 15:09:03,578 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received enough reader, starting enumerator...
+2023-10-16 15:09:03,579 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Starting to calculate splits.
+2023-10-16 15:09:03,581 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[925038, 950038], splitId=37) to 0 reader.
+2023-10-16 15:09:03,581 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[50003, 75003], splitId=2) to 0 reader.
+2023-10-16 15:09:03,581 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[775032, 800032], splitId=31) to 0 reader.
+2023-10-16 15:09:03,581 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[875036, 900036], splitId=35) to 0 reader.
+2023-10-16 15:09:03,581 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[100005, 125005], splitId=4) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[725030, 750030], splitId=29) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[75004, 100004], splitId=3) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[750031, 775031], splitId=30) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[1, 25001], splitId=0) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[825034, 850034], splitId=33) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[225010, 250010], splitId=9) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[600025, 625025], splitId=24) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[900037, 925037], splitId=36) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[975040, 1000040], splitId=39) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[150007, 175007], splitId=6) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[525022, 550022], splitId=21) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[675028, 700028], splitId=27) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[300013, 325013], splitId=12) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[375016, 400016], splitId=15) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[450019, 475019], splitId=18) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[850035, 875035], splitId=34) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[125006, 150006], splitId=5) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[25002, 50002], splitId=1) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[175008, 200008], splitId=7) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[650027, 675027], splitId=26) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[800033, 825033], splitId=32) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[950039, 975039], splitId=38) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[400017, 425017], splitId=16) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[425018, 450018], splitId=17) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[350015, 375015], splitId=14) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[475020, 500020], splitId=19) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[325014, 350014], splitId=13) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[500021, 525021], splitId=20) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[250011, 275011], splitId=10) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[575024, 600024], splitId=23) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[200009, 225009], splitId=8) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[275012, 300012], splitId=11) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[550023, 575023], splitId=22) to 0 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[625026, 650026], splitId=25) to 1 reader.
+2023-10-16 15:09:03,582 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assigning JdbcSourceSplit(parameterValues=[700029, 725029], splitId=28) to 0 reader.
+2023-10-16 15:09:03,583 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assign splits [JdbcSourceSplit(parameterValues=[925038, 950038], splitId=37), JdbcSourceSplit(parameterValues=[50003, 75003], splitId=2), JdbcSourceSplit(parameterValues=[775032, 800032], splitId=31), JdbcSourceSplit(parameterValues=[875036, 900036], splitId=35), JdbcSourceSplit(parameterValues=[100005, 125005], splitId=4), JdbcSourceSplit(parameterValues=[1, 25001], splitId=0), JdbcSourceSplit(parameterValues=[825034, 850034], splitId=33), JdbcSourceSplit(parameterValues=[600025, 625025], splitId=24), JdbcSourceSplit(parameterValues=[975040, 1000040], splitId=39), JdbcSourceSplit(parameterValues=[150007, 175007], splitId=6), JdbcSourceSplit(parameterValues=[375016, 400016], splitId=15), JdbcSourceSplit(parameterValues=[650027, 675027], splitId=26), JdbcSourceSplit(parameterValues=[425018, 450018], splitId=17), JdbcSourceSplit(parameterValues=[475020, 500020], splitId=19), JdbcSourceSplit(parameterValues=[325014, 350014], splitId=13), JdbcSourceSplit(parameterValues=[500021, 525021], splitId=20), JdbcSourceSplit(parameterValues=[200009, 225009], splitId=8), JdbcSourceSplit(parameterValues=[275012, 300012], splitId=11), JdbcSourceSplit(parameterValues=[550023, 575023], splitId=22), JdbcSourceSplit(parameterValues=[700029, 725029], splitId=28)] to reader 0
+2023-10-16 15:09:03,592 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Assign splits [JdbcSourceSplit(parameterValues=[725030, 750030], splitId=29), JdbcSourceSplit(parameterValues=[75004, 100004], splitId=3), JdbcSourceSplit(parameterValues=[750031, 775031], splitId=30), JdbcSourceSplit(parameterValues=[225010, 250010], splitId=9), JdbcSourceSplit(parameterValues=[900037, 925037], splitId=36), JdbcSourceSplit(parameterValues=[525022, 550022], splitId=21), JdbcSourceSplit(parameterValues=[675028, 700028], splitId=27), JdbcSourceSplit(parameterValues=[300013, 325013], splitId=12), JdbcSourceSplit(parameterValues=[450019, 475019], splitId=18), JdbcSourceSplit(parameterValues=[850035, 875035], splitId=34), JdbcSourceSplit(parameterValues=[125006, 150006], splitId=5), JdbcSourceSplit(parameterValues=[25002, 50002], splitId=1), JdbcSourceSplit(parameterValues=[175008, 200008], splitId=7), JdbcSourceSplit(parameterValues=[800033, 825033], splitId=32), JdbcSourceSplit(parameterValues=[950039, 975039], splitId=38), JdbcSourceSplit(parameterValues=[400017, 425017], splitId=16), JdbcSourceSplit(parameterValues=[350015, 375015], splitId=14), JdbcSourceSplit(parameterValues=[250011, 275011], splitId=10), JdbcSourceSplit(parameterValues=[575024, 600024], splitId=23), JdbcSourceSplit(parameterValues=[625026, 650026], splitId=25)] to reader 1
+2023-10-16 15:09:03,708 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.internal.executor.FieldNamedPreparedStatement - PrepareStatement sql is:
+INSERT INTO `seatunnel_sink`.`emp_104` (`emp_id`, `emp_name`, `gender`, `account`, `org_id`, `birth_date`, `age`, `nationality`, `province`, `city`, `email`, `phone`, `begin_date`, `remark`, `create_time`, `update_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+
+2023-10-16 15:09:03,732 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.internal.executor.FieldNamedPreparedStatement - PrepareStatement sql is:
+INSERT INTO `seatunnel_sink`.`emp_104` (`emp_id`, `emp_name`, `gender`, `account`, `org_id`, `birth_date`, `age`, `nationality`, `province`, `city`, `email`, `phone`, `begin_date`, `remark`, `create_time`, `update_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+
+2023-10-16 15:09:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  15
+taskCount                 :                  16
+***********************************************
+
+2023-10-16 15:09:12,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:13,570 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 1
+2023-10-16 15:09:22,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  20
+taskCount                 :                  21
+***********************************************
+
+2023-10-16 15:09:22,117 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:23,565 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 2
+2023-10-16 15:09:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  25
+taskCount                 :                  26
+***********************************************
+
+2023-10-16 15:09:32,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:33,147 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel] [5.1] Received auth from Connection[id=4, /127.0.0.1:5801->/127.0.0.1:48605, qualifier=null, endpoint=[127.0.0.1]:48605, remoteUuid=c509370d-fb96-4ddf-8f86-1dc40e4d27f5, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: c509370d-fb96-4ddf-8f86-1dc40e4d27f5, client name: hz.client_2, client version: 5.1.1
+2023-10-16 15:09:33,213 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel] [5.1] Connection[id=4, /127.0.0.1:5801->/127.0.0.1:48605, qualifier=null, endpoint=[127.0.0.1]:48605, remoteUuid=c509370d-fb96-4ddf-8f86-1dc40e4d27f5, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2023-10-16 15:09:33,216 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel] [5.1] Destroying ClientEndpoint{connection=Connection[id=4, /127.0.0.1:5801->/127.0.0.1:48605, qualifier=null, endpoint=[127.0.0.1]:48605, remoteUuid=c509370d-fb96-4ddf-8f86-1dc40e4d27f5, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=c509370d-fb96-4ddf-8f86-1dc40e4d27f5, clientName=hz.client_2, authenticated=true, clientVersion=5.1.1, creationTime=1697440173146, latest clientAttributes=lastStatisticsCollectionTime=1697440173184,enterprise=false,clientType=JVM,clientVersion=5.1.1,clusterConnectionTimestamp=1697440173143,clientAddress=127.0.0.1,clientName=hz.client_2,credentials.principal=null,os.committedVirtualMemorySize=4907360256,os.freePhysicalMemorySize=565342208,os.freeSwapSpaceSize=5363429376,os.maxFileDescriptorCount=4096,os.openFileDescriptorCount=365,os.processCpuTime=16860000000,os.systemLoadAverage=0.46,os.totalPhysicalMemorySize=8202358784,os.totalSwapSpaceSize=5368705024,runtime.availableProcessors=2,runtime.freeMemory=234759016,runtime.maxMemory=1823473664,runtime.totalMemory=721420288,runtime.uptime=51162,runtime.usedMemory=486661272, labels=[]}
+2023-10-16 15:09:33,571 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 3
+2023-10-16 15:09:34,861 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel] [5.1] Received auth from Connection[id=5, /127.0.0.1:5801->/127.0.0.1:38791, qualifier=null, endpoint=[127.0.0.1]:38791, remoteUuid=3f416933-a13b-42a1-9e9f-047bafda8ea2, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: 3f416933-a13b-42a1-9e9f-047bafda8ea2, client name: hz.client_1, client version: 5.1
+2023-10-16 15:09:35,101 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Begin do save point for Job 10 (766195915831640065) 
+2023-10-16 15:09:35,102 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Start save point for Job (766195915831640065)
+2023-10-16 15:09:35,105 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 4
+2023-10-16 15:09:35,106 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - The save point checkpointId is 4
+2023-10-16 15:09:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:09:42,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:09:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:09:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   7
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:02,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   4
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:12,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   4
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:22,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   4
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:32,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:42,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:10:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:10:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:02,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:12,117 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:22,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:32,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:42,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:11:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:11:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:02,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:12,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:22,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:22,117 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:32,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:32,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:42,115 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:12:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:12:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:02,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:22,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:32,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:42,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:13:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:13:52,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:14:02,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:14:12,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:22,118 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:14:22,119 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:30,164 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceReader - Closed the bounded jdbc source
+2023-10-16 15:14:31,119 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceReader - Closed the bounded jdbc source
+2023-10-16 15:14:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   1
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   1
+completedTaskCount        :                  35
+taskCount                 :                  36
+***********************************************
+
+2023-10-16 15:14:32,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:32,642 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel] [5.1] Connection[id=5, /127.0.0.1:5801->/127.0.0.1:38791, qualifier=null, endpoint=[127.0.0.1]:38791, remoteUuid=3f416933-a13b-42a1-9e9f-047bafda8ea2, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2023-10-16 15:14:32,654 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel] [5.1] Destroying ClientEndpoint{connection=Connection[id=5, /127.0.0.1:5801->/127.0.0.1:38791, qualifier=null, endpoint=[127.0.0.1]:38791, remoteUuid=3f416933-a13b-42a1-9e9f-047bafda8ea2, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=3f416933-a13b-42a1-9e9f-047bafda8ea2, clientName=hz.client_1, authenticated=true, clientVersion=5.1, creationTime=1697440174861, latest clientAttributes=lastStatisticsCollectionTime=1697440469956,enterprise=false,clientType=JVM,clientVersion=5.1,clusterConnectionTimestamp=1697440174813,clientAddress=127.0.0.1,clientName=hz.client_1,credentials.principal=null,os.committedVirtualMemorySize=3693412352,os.freePhysicalMemorySize=160350208,os.freeSwapSpaceSize=5363429376,os.maxFileDescriptorCount=4096,os.openFileDescriptorCount=38,os.processCpuTime=4840000000,os.systemLoadAverage=0.14,os.totalPhysicalMemorySize=8202358784,os.totalSwapSpaceSize=5368705024,runtime.availableProcessors=2,runtime.freeMemory=854044320,runtime.maxMemory=1029177344,runtime.totalMemory=1029177344,runtime.uptime=296729,runtime.usedMemory=175133024, labels=[]}
+2023-10-16 15:14:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   5
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  35
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:14:42,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:14:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   5
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  35
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:14:52,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:01,733 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(1/1@766195915831640065) notify finished!
+2023-10-16 15:15:01,733 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, checkpoint:org.apache.seatunnel.engine.server.checkpoint.CompletedCheckpoint@631223e8
+2023-10-16 15:15:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   4
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  36
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:15:02,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   4
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  36
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:15:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:14,744 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(3/1@766195915831640065) notify finished!
+2023-10-16 15:15:14,744 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, checkpoint:org.apache.seatunnel.engine.server.checkpoint.CompletedCheckpoint@4455a2c7
+2023-10-16 15:15:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   3
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  37
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:15:22,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:22,629 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(2/1@766195915831640065) notify finished!
+2023-10-16 15:15:22,629 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, checkpoint:org.apache.seatunnel.engine.server.checkpoint.CompletedCheckpoint@177fab4b
+2023-10-16 15:15:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   2
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  38
+taskCount                 :                  40
+***********************************************
+
+2023-10-16 15:15:32,114 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   1
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:35,657 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(4/1@766195915831640065) notify finished!
+2023-10-16 15:15:35,657 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, checkpoint:org.apache.seatunnel.engine.server.checkpoint.CompletedCheckpoint@7d599af6
+2023-10-16 15:15:35,661 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start clean pending checkpoint cause CheckpointCoordinator completed.
+2023-10-16 15:15:35,663 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Turn checkpoint_state_766195915831640065_1 state from null to SUSPEND
+2023-10-16 15:15:35,674 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] taskDone, taskId = 20000, taskGroup = TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1}
+2023-10-16 15:15:35,676 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] Task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1} complete with state FINISHED
+2023-10-16 15:15:35,676 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] Received task end from execution TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=1}, state FINISHED
+2023-10-16 15:15:35,679 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] turn to end state FINISHED.
+2023-10-16 15:15:35,679 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SplitEnumerator (1/1)] end with state FINISHED
+2023-10-16 15:15:35,701 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] taskDone, taskId = 50000, taskGroup = TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000}
+2023-10-16 15:15:35,708 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] taskDone, taskId = 40001, taskGroup = TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001}
+2023-10-16 15:15:35,724 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] taskDone, taskId = 50001, taskGroup = TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001}
+2023-10-16 15:15:35,724 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] Task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001} complete with state FINISHED
+2023-10-16 15:15:35,724 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] Received task end from execution TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30001}, state FINISHED
+2023-10-16 15:15:35,725 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] turn to end state FINISHED.
+2023-10-16 15:15:35,725 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (2/2)] end with state FINISHED
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] taskDone, taskId = 40000, taskGroup = TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000}
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel] [5.1] Task TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000} complete with state FINISHED
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] Received task end from execution TaskGroupLocation{jobId=766195915831640065, pipelineId=1, taskGroupId=30000}, state FINISHED
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] turn to end state FINISHED.
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job 10 (766195915831640065), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc-default-identifier]-SourceTask (1/2)] end with state FINISHED
+2023-10-16 15:15:35,746 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job 10 (766195915831640065), Pipeline: [(1/1)] end with state FINISHED
+2023-10-16 15:15:35,763 INFO  org.apache.seatunnel.engine.server.master.JobMaster - release the pipeline Job 10 (766195915831640065), Pipeline: [(1/1)] resource
+2023-10-16 15:15:35,766 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 766195915831640065, slot: SlotProfile{worker=[localhost]:5801, slotID=1, ownerJobID=766195915831640065, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='91eccfb9-7278-4496-bf6c-9f292bf84c53'}
+2023-10-16 15:15:35,766 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 766195915831640065, slot: SlotProfile{worker=[localhost]:5801, slotID=3, ownerJobID=766195915831640065, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='91eccfb9-7278-4496-bf6c-9f292bf84c53'}
+2023-10-16 15:15:35,766 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 766195915831640065, slot: SlotProfile{worker=[localhost]:5801, slotID=2, ownerJobID=766195915831640065, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='91eccfb9-7278-4496-bf6c-9f292bf84c53'}
+2023-10-16 15:15:35,768 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job 10 (766195915831640065), Pipeline: [(1/1)] turn to end state FINISHED.
+2023-10-16 15:15:35,769 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job 10 (766195915831640065) end with state FINISHED
+2023-10-16 15:15:35,798 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel] [5.1] Connection[id=3, /127.0.0.1:5801->/127.0.0.1:35527, qualifier=null, endpoint=[127.0.0.1]:35527, remoteUuid=7a43759a-b45b-47f4-83e9-ab8c014b862c, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2023-10-16 15:15:35,798 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel] [5.1] Destroying ClientEndpoint{connection=Connection[id=3, /127.0.0.1:5801->/127.0.0.1:35527, qualifier=null, endpoint=[127.0.0.1]:35527, remoteUuid=7a43759a-b45b-47f4-83e9-ab8c014b862c, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=7a43759a-b45b-47f4-83e9-ab8c014b862c, clientName=hz.client_1, authenticated=true, clientVersion=5.1, creationTime=1697440141337, latest clientAttributes=lastStatisticsCollectionTime=1697440531418,enterprise=false,clientType=JVM,clientVersion=5.1,clusterConnectionTimestamp=1697440141318,clientAddress=127.0.0.1,clientName=hz.client_1,credentials.principal=null,os.committedVirtualMemorySize=3708243968,os.freePhysicalMemorySize=389087232,os.freeSwapSpaceSize=5363429376,os.maxFileDescriptorCount=4096,os.openFileDescriptorCount=49,os.processCpuTime=6690000000,os.systemLoadAverage=0.05,os.totalPhysicalMemorySize=8202358784,os.totalSwapSpaceSize=5368705024,runtime.availableProcessors=2,runtime.freeMemory=878590928,runtime.maxMemory=1029177344,runtime.totalMemory=1029177344,runtime.uptime=391471,runtime.usedMemory=150586416, labels=[]}
+2023-10-16 15:15:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:15:42,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:15:52,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   5
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:15:52,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   4
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:02,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   4
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   3
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:22,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   3
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:32,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:42,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:16:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:16:52,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:02,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:02,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:12,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:12,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:22,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:22,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:32,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:32,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:42,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:42,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
+2023-10-16 15:17:52,112 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                  44
+taskCount                 :                  44
+***********************************************
+
+2023-10-16 15:17:52,113 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel] [5.1] 
+***********************************************
+                Job info detail
+***********************************************
+createdJobCount           :                   0
+scheduledJobCount         :                   0
+runningJobCount           :                   0
+failingJobCount           :                   0
+failedJobCount            :                   0
+cancellingJobCount        :                   0
+canceledJobCount          :                   0
+finishedJobCount          :                   0
+restartingJobCount        :                   0
+suspendedJobCount         :                   0
+reconcilingJobCount       :                   0
+***********************************************
+
